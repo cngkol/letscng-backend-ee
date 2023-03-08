@@ -1,0 +1,10 @@
+firebase-admin
+Flask
+Flask-Cors
+Flask-RESTful
+Flask-Session
+stravalib
+guid
+pandas
+numpy
+gunicorn
