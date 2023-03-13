@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+import os
 import sqlite3
 import traceback
 import pandas as pd
@@ -88,4 +89,4 @@ def set_bike():
 
 # main driver function
 if __name__ == '__main__':
-    app.run()
+    app.run(port=int(os.environ.get("PORT", 5000)),host='0.0.0.0',debug=False)

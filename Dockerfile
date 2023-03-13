@@ -6,4 +6,6 @@ RUN pip3 install -r /requirements.txt
 COPY . /app
 WORKDIR /app
 EXPOSE 5000
-ENTRYPOINT ["./entrypoint.sh"]
+RUN chmod 755 ./entrypoint.sh
+CMD ["./entrypoint.sh"]
+# ENTRYPOINT ["./entrypoint.sh"]
